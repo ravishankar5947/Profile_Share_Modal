@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Share Modal | Ravi Shankar</title>
+    <!-- <link rel="stylesheet" href="./images/favicon.svg" type="image/x-icon"> -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- wrapper starts  -->
+    <div class="wrapper">
+        <div class="circle circle-top"></div>
+        <div class="circle circle-bottom"></div>
+
+        <!-- card starts  -->
+        <div class="card">
+            <img src="./images/IMG20220622183211_01.jpg" alt="user image">
+            <h2 class="user-name">Ravi&nbsp; Shankar</h2>
+            <h3 class="user-designation">Website Developer</h3>
+
+            <div class="buttons-group">
+                <button id="share-btn">
+                    <i class="fa-solid fa-share"></i>
+                    Share My Profile
+                </button>
+
+                <button id="follow-btn">Follow Me</button>
+            </div>
+        </div>
+        <!-- card ends  -->
+    </div>
+    <!-- wrapper ends -->
+    
+    <!-- Profile Modal Starts  -->
+    <div class="modal" id="profile-modal">
+        <!-- modal header  -->
+        <div class="modal-header">
+            <h2 class="modal-title">Share My Profile</h2>
+            <div>
+                <i class="fa-solid fa-xmark modal-close" id="profile-modal-close"></i>
+            </div>
+        </div>
+
+        <!-- modal body  -->
+        <div class="modal-body">
+            <h3>Share this via</h3>
+            <div class="social-icons">
+                <a href="#" class="icon" target="_blank" id="facebook-icon">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#" class="icon" target="_blank" id="twitter-icon">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="#" class="icon" target="_blank" id="instagram-icon">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#" class="icon" target="_blank" id="whatsapp-icon">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="#" class="icon" target="_blank" id="telegram-icon">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Profile Modal ends  -->
+
+    <!-- follow Modal starts  -->
+    <div class="modal" id="follow-modal">
+        <!-- modal header  -->
+        <div class="modal-header">
+            <h2 class="modal-title">Github Profile</h2>
+            <div>
+                <i class="fa-solid fa-xmark modal-close" id="follow-modal-close"></i>
+            </div>
+        </div>
+
+        <!-- modal-body -->
+        <div class="modal-body">
+            <h3>Check my Repositories</h3>
+            <div class="social-icons">
+                <a href="#" class="icon" target="_blank" id="github-icon">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a href="#" id="follow-unfollow" target="_blank">Follow</a>
+            </div>
+        </div> 
+    </div>
+    <!-- follow Modal ends  -->
+
+    <!-- overlay -->
+    <div class="overlay" id="overlay"></div>
+    <script
+  src="https://kit.fontawesome.com/58a810656e.js"
+  crossorigin="anonymous"
+></script>
+<script src="./js/index.js"></script> 
+</body>
+</html>
